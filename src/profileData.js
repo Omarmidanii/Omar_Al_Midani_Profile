@@ -11,7 +11,7 @@ export const profile = {
     codeforces: "https://codeforces.com/profile/Omar_Al_Midani"
   },
   metrics: [
-    { value: "1500+", label: "Problems solved", detail: "Codeforces, AtCoder, LeetCode" },
+    { value: "2000+", label: "Problems solved", detail: "Codeforces, AtCoder, LeetCode" },
     { value: "Bronze", label: "ACM medal", detail: "Damascus University Local Contest" },
     { value: "AI", label: "Bachelor track", detail: "Damascus University" },
     { value: "Full-stack", label: "Delivery", detail: "Laravel + ReactJS" }
