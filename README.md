@@ -1,4 +1,4 @@
-# Omar Al-Midani - Three.js Professional Profile
+# Omar Al-Midani
 
 A polished, responsive portfolio/profile site built with **Three.js**, vanilla JavaScript, and modern CSS.an interactive developer profile with a WebGL hero scene, professional timeline, project cards, skills architecture, education, certifications, and contact section.
 
