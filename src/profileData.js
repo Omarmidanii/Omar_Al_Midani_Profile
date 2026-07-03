@@ -1,159 +1,181 @@
 export const profile = {
   name: "Omar Al-Midani",
-  title: "Full Stack Developer",
+  title: "Artificial Intelligence Engineer & Full Stack Developer",
   location: "Damascus, Syria",
-  tagline: "Full Stack Developer with strong Laravel back-end expertise and modern ReactJS front-end delivery.",
-  resume: "./Omar_Al-Midani_CV.pdf",
+  tagline: "AI engineer and full-stack developer building OCR systems, intelligent agents, healthcare platforms, and scalable Laravel/React applications.",
+  resume: "./Omar-AlMidani-CV.pdf",
   contact: {
     email: "omarmidani90@gmail.com",
-    linkedin: "https://www.linkedin.com/in/omar-al-midani",
+    linkedin: "https://www.linkedin.com/in/omar-al-midani/",
     github: "https://github.com/Omarmidanii",
     codeforces: "https://codeforces.com/profile/Omar_Al_Midani"
   },
   metrics: [
-    { value: "2000+", label: "Problems solved", detail: "Codeforces, AtCoder, LeetCode" },
-    { value: "Bronze", label: "ACM medal", detail: "Damascus University Local Contest" },
-    { value: "AI", label: "Bachelor track", detail: "Damascus University" },
-    { value: "Full-stack", label: "Delivery", detail: "Laravel + ReactJS" }
+    { value: "AI", label: "Engineering focus", detail: "OCR, NLP/NLU, agents, robotics" },
+    { value: "18th", label: "SCPC 2025", detail: "Top 20 national finish in Syria" },
+    { value: "2x", label: "DCPC medalist", detail: "Damascus contests in 2022 and 2024" },
+    { value: "C1", label: "English level", detail: "Listening, reading, and speaking" }
   ],
+  sceneSkills: ["OCR", "Python", "Agent Systems", "Laravel", "ReactJS", "NLP", "WebSockets", "ElasticSearch"],
   skills: [
     {
-      group: "Languages & Frameworks",
-      items: ["PHP", "JavaScript", "TypeScript", "C++", "Laravel", "ReactJS"]
+      group: "AI & Intelligent Systems",
+      items: ["OCR Optimization", "Model Fine-Tuning", "NLP", "NLU", "Agent Architecture", "Gesture Recognition"]
     },
     {
-      group: "Front-end Libraries",
-      items: ["Zustand", "React Query", "React Router", "MUI", "Bootstrap", "Chakra UI"]
+      group: "Programming Languages",
+      items: ["Python", "C++", "PHP", "JavaScript", "TypeScript"]
     },
     {
-      group: "Back-end & Data",
-      items: ["REST APIs", "MySQL", "ElasticSearch", "Firebase", "Payment Integration", "Pusher"]
+      group: "Full-Stack Engineering",
+      items: ["Laravel", "Laravel Blade", "ReactJS", "REST APIs", "MySQL", "Database Management"]
     },
     {
-      group: "Engineering Practices",
-      items: ["SOLID", "MVC", "Repository-Service Pattern", "Clean Code", "Git", "Postman"]
+      group: "Production Systems",
+      items: ["ElasticSearch", "WebSockets", "Pusher", "Stripe API", "PayPal API", "Webhooks"]
+    },
+    {
+      group: "Developer Toolkit",
+      items: ["Git", "Software Libraries", "Debugging", "Desktop App Deployment", "Email Parsing", "Classification Algorithms"]
+    },
+    {
+      group: "Algorithmic Strength",
+      items: ["Dynamic Programming", "Graph Theory", "Advanced Data Structures", "Computational Geometry", "Complexity Optimization"]
     }
   ],
   experience: [
     {
+      role: "Artificial Intelligence Engineer",
+      company: "TOOLII",
+      period: "Jul 2025 - Dec 2025",
+      type: "AI systems engineering",
+      summary: "Designed and implemented AI-enabled systems spanning OCR optimization, robotic agents, automated email intelligence, and healthcare web applications.",
+      highlights: [
+        "Replaced a paid Azure OCR workflow with a fine-tuned open-source alternative to reduce operational cost while maintaining strong document-processing accuracy.",
+        "Architected an intelligent agent system for a robotic clinic receptionist, including gesture-control modules for improved human-robot interaction.",
+        "Built a Python desktop tool that extracts and classifies incoming emails by predefined patient-information interests, streamlining information management.",
+        "Delivered a Laravel clinic management website with Blade components, doctor dashboard workflows, and an integrated AI bot for inquiries, reservations, and appointment registration."
+      ],
+      stack: ["Python", "OCR", "Fine-Tuning", "Agents", "Laravel", "Blade", "AI Bot", "Healthcare"],
+      links: [{ label: "TOOLII", href: "https://toolii.com.au" }]
+    },
+    {
       role: "Full Stack Developer",
-      company: "ZORBA Company",
-      period: "Mar 2025 - Present",
-      type: "Current role",
-      summary: "Developing and maintaining full-stack web applications with Laravel and ReactJS.",
+      company: "ZORBA",
+      period: "Jan 2025 - Jun 2025",
+      type: "Full-stack product development",
+      summary: "Developed production web applications with Laravel back ends, ReactJS front ends, high-performance search, payments, and real-time communication.",
       highlights: [
-        "Implemented payment integration, ElasticSearch for high-volume data, and real-time chat and notifications.",
-        "Collaborated with a team to design scalable, maintainable application solutions.",
-        "Contributed across front-end, back-end, integrations, and production feature delivery."
+        "Built websites using Laravel for the back end and ReactJS for front-end interfaces.",
+        "Deployed ElasticSearch for high-volume data retrieval and fast query performance during peak traffic.",
+        "Managed end-to-end Stripe and PayPal payment lifecycles, including webhooks and automated invoicing.",
+        "Developed low-latency communication features using WebSockets, Pusher, and modular React components."
       ],
-      stack: ["Laravel", "ReactJS", "ElasticSearch", "Pusher", "Payment APIs"]
-    },
-    {
-      role: "Back-End Developer",
-      company: "Mshwar - Tourism Website",
-      period: "Oct 2024 - Mar 2025",
-      type: "Product platform",
-      summary: "Built the full Laravel back end for a proprietary tourism website.",
-      highlights: [
-        "Developed features for managing tourist content and site structure.",
-        "Delivered a maintainable back-end foundation for tourism content operations.",
-        "Worked on a proprietary project that is not publicly available."
-      ],
-      stack: ["Laravel", "MySQL", "REST APIs"],
-      links: [{ label: "Website", href: "https://mshwar.sy" }]
-    },
-    {
-      role: "Freelance Full Stack Developer",
-      company: "The Magic of The East",
-      period: "Jul 2024 - Nov 2024",
-      type: "Freelance project",
-      summary: "Built a Laravel and ReactJS application for furniture warehouse operations.",
-      highlights: [
-        "Implemented product tracking, customer purchase history, warehouse expenses, and admin views.",
-        "Created operational interfaces to support warehouse visibility and administration.",
-        "Delivered the project end-to-end as a full-stack freelance engagement."
-      ],
-      stack: ["Laravel", "ReactJS", "MySQL"],
-      links: [
-        { label: "Website", href: "https://sehr-alsharq.sy" },
-        { label: "GitHub", href: "https://github.com/Omarmidanii/The-Magic-of-The-East" }
-      ]
-    },
-    {
-      role: "Full Stack Developer - Volunteer",
-      company: "Syrian Red Crescent",
-      period: "Apr 2024 - Aug 2024",
-      type: "Volunteer impact",
-      summary: "Led front-end development and assisted with back-end delivery for internal operational tools.",
-      highlights: [
-        "Developed tools to manage transactions between donors and warehouses.",
-        "Supported reporting workflows and mobile-friendly access.",
-        "The project was frozen due to war conditions."
-      ],
-      stack: ["ReactJS", "Laravel", "Reporting", "Mobile Access"],
-      links: [{ label: "GitHub", href: "https://github.com/Ahmadkadoura/swis" }]
+      stack: ["Laravel", "ReactJS", "ElasticSearch", "Stripe", "PayPal", "Pusher", "WebSockets"]
     }
   ],
   projects: [
     {
-      name: "ZORBA Web Applications",
-      category: "Full-stack product engineering",
-      description: "Feature-rich applications using Laravel and ReactJS, including real-time communication, notifications, payment workflows, and search at scale.",
-      impact: "Production-oriented engineering across back-end, front-end, and integrations.",
-      tags: ["Laravel", "ReactJS", "ElasticSearch", "Real-time", "Payments"]
+      name: "Open-Source OCR Replacement",
+      category: "AI cost optimization",
+      description: "Fine-tuned an open-source OCR alternative to replace a paid Azure OCR service for document-processing workflows.",
+      impact: "Reduced operational cost while preserving high-accuracy document extraction capabilities.",
+      tags: ["OCR", "Fine-Tuning", "Open Source", "Cost Optimization", "Document AI"]
     },
     {
-      name: "Mshwar Tourism Website",
-      category: "Back-end architecture",
-      description: "A proprietary Laravel back end for tourism content and website structure management.",
-      impact: "Structured content operations for a tourism platform.",
-      tags: ["Laravel", "REST APIs", "MySQL"],
-      links: [{ label: "Visit", href: "https://mshwar.sy" }]
+      name: "Robotic Receptionist Agent System",
+      category: "Robotics and intelligent agents",
+      description: "Designed the system architecture for a clinic receptionist robot and implemented gesture-control modules for richer human-robot interaction.",
+      impact: "Connected agent architecture, robotics behavior, and patient-facing interaction design into one deployable concept.",
+      tags: ["Agents", "Robotics", "Gesture Control", "HRI", "System Architecture"]
     },
     {
-      name: "The Magic of The East",
-      category: "Warehouse management system",
-      description: "A furniture warehouse web app for product tracking, customer purchase history, expense management, and admin oversight.",
-      impact: "Improved visibility across inventory, customers, and operational expenses.",
-      tags: ["Laravel", "ReactJS", "Admin Views", "Warehouse"],
-      links: [
-        { label: "Visit", href: "https://sehr-alsharq.sy" },
-        { label: "Code", href: "https://github.com/Omarmidanii/The-Magic-of-The-East" }
-      ]
+      name: "Email Automation Desktop Tool",
+      category: "Python automation",
+      description: "Built a Python desktop application that extracts and classifies incoming emails according to predefined patient-information interests.",
+      impact: "Reduced manual data-entry overhead and improved information triage for healthcare-related communication.",
+      tags: ["Python", "Email Parsing", "Classification", "Desktop App", "Automation"]
     },
     {
-      name: "Syrian Red Crescent SWIS",
-      category: "Volunteer operations platform",
-      description: "A donor-to-warehouse transaction management tool with reporting and mobile access support.",
-      impact: "Designed to support humanitarian operations and reporting workflows.",
-      tags: ["ReactJS", "Laravel", "Reports", "Mobile Access"],
-      links: [{ label: "Code", href: "https://github.com/Ahmadkadoura/swis" }]
+      name: "Clinic Management Platform with AI Bot",
+      category: "Healthcare web application",
+      description: "Converted UI components into Laravel Blade code and built a clinic management website with doctor dashboards, reservation workflows, and patient inquiry automation.",
+      impact: "Enabled patient inquiries, appointment registration, and doctor approval workflows through an integrated AI-assisted web platform.",
+      tags: ["Laravel", "Blade", "AI Bot", "MySQL", "Healthcare"],
+      links: [{ label: "TOOLII", href: "https://toolii.com.au" }]
+    },
+    {
+      name: "ZORBA Production Web Systems",
+      category: "Full-stack engineering",
+      description: "Delivered Laravel and ReactJS features involving high-volume search, payments, webhooks, automated invoicing, and real-time communication.",
+      impact: "Combined scalable back-end services with interactive front-end components for production business workflows.",
+      tags: ["Laravel", "ReactJS", "ElasticSearch", "Payments", "WebSockets"]
+    }
+  ],
+  leadership: [
+    {
+      title: "SCPC 2025 - Top 20 National Finish",
+      organization: "Syrian Collegiate Programming Contest",
+      period: "2025",
+      detail: "Secured 18th place nationally among teams from across Syria."
+    },
+    {
+      title: "Two-Time DCPC Medalist",
+      organization: "Damascus Collegiate Programming Contest",
+      period: "2022 & 2024",
+      detail: "Earned medals in multiple Damascus-level programming contests, showing sustained competitive performance."
+    },
+    {
+      title: "Student-Elected Competitive Programming Coach",
+      organization: "Damascus University",
+      period: "Ongoing",
+      detail: "Selected by peers to coach undergraduates in Dynamic Programming, Graph Theory, and Advanced Data Structures."
+    },
+    {
+      title: "Active Competitive Programmer",
+      organization: "Codeforces and ICPC ecosystem",
+      period: "Multi-year",
+      detail: "Competed across DCPC 2022, DCPC-SCPC 2023, DCPC 2024, and DCPC-SCPC 2025, with focus areas including computational geometry and algorithmic efficiency."
     }
   ],
   education: [
     {
       title: "Bachelor of Artificial Intelligence",
       organization: "Damascus University",
-      period: "2021 - Present",
-      detail: "Academic foundation in AI, computer science, and technical problem solving."
+      period: "2021 - 2026",
+      detail: "Formal academic track in artificial intelligence, software engineering, algorithms, and computer science foundations."
     },
     {
       title: "Diploma in English",
-      organization: "New Horizons Center",
-      period: "2020 - 2021",
-      detail: "English communication foundation for professional and technical environments."
+      organization: "New Horizons",
+      period: "Nov 2020 - Apr 2022",
+      detail: "English-language training supporting technical communication and international collaboration."
+    }
+  ],
+  languages: [
+    {
+      name: "Arabic",
+      level: "Mother tongue",
+      detail: "Native professional and academic communication."
     },
     {
-      title: "ACM Programming Contest - Bronze Medal",
-      organization: "Damascus University Local Contest",
-      period: "Jun 2023",
-      detail: "Bronze Medal, 9th place; competitive programming and algorithmic problem solving."
+      name: "English",
+      level: "C1 / B2 writing",
+      detail: "C1 listening, reading, spoken production, and spoken interaction; B2 writing."
+    }
+  ],
+  volunteering: [
+    {
+      title: "Media Team Volunteer",
+      organization: "Faculty of Information Engineering, Damascus University",
+      period: "Oct 2025 - Current",
+      detail: "Served as liaison between fifth-year students and faculty members, helping communicate student concerns and coordinate academic and administrative follow-up."
     },
     {
-      title: "Competitive Programming Coach",
-      organization: "Problem Solving",
-      period: "Ongoing",
-      detail: "Coaching algorithmic problem solving with experience across Codeforces, AtCoder, and LeetCode."
+      title: "Student Association Representative",
+      organization: "Damascus University",
+      period: "Jan 2026 - Current",
+      detail: "Represented fifth-year AI specialization students and contributed to student-union decision-making and communication with university administration."
     }
   ]
 };

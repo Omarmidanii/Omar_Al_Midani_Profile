@@ -35,6 +35,7 @@ function renderActions() {
     <a class="button button-primary" href="mailto:${profile.contact.email}">Start a conversation</a>
     <button class="button button-ghost" type="button" data-copy-email>Copy email</button>
     <a class="button button-ghost" href="${profile.contact.github}" ${externalLinkAttributes}>View GitHub</a>
+    <a class="button button-ghost" href="${profile.contact.codeforces}" ${externalLinkAttributes}>Codeforces</a>
   `;
 
   const copyButton = document.querySelector("[data-copy-email]");
@@ -138,20 +139,38 @@ function renderProjects() {
     .join("");
 }
 
-function renderEducation() {
-  const target = document.querySelector("#education-grid");
-  target.innerHTML = profile.education
+function renderCardGrid(selector, items) {
+  const target = document.querySelector(selector);
+  if (!target || !items) return;
+
+  target.innerHTML = items
     .map(
       (item, index) => html`
         <article class="education-card reveal" style="--delay: ${index * 70}ms">
-          <span>${item.period}</span>
-          <h3>${item.title}</h3>
-          <p class="company">${item.organization}</p>
+          <span>${item.period || item.level}</span>
+          <h3>${item.title || item.name}</h3>
+          <p class="company">${item.organization || item.level}</p>
           <p>${item.detail}</p>
         </article>
       `
     )
     .join("");
+}
+
+function renderEducation() {
+  renderCardGrid("#education-grid", profile.education);
+}
+
+function renderLeadership() {
+  renderCardGrid("#leadership-grid", profile.leadership);
+}
+
+function renderLanguages() {
+  renderCardGrid("#languages-grid", profile.languages);
+}
+
+function renderVolunteering() {
+  renderCardGrid("#volunteering-grid", profile.volunteering);
 }
 
 function renderStructuredData() {
@@ -176,7 +195,10 @@ renderMetrics();
 renderSkills();
 renderTimeline();
 renderProjects();
+renderLeadership();
 renderEducation();
+renderLanguages();
+renderVolunteering();
 renderStructuredData();
 
 function setHeaderState() {
@@ -442,7 +464,7 @@ async function initThreeScene() {
   );
   scene.add(particles);
 
-  const skillNames = ["Laravel", "ReactJS", "TypeScript", "REST APIs", "MySQL", "ElasticSearch", "Clean Code", "SOLID"];
+  const skillNames = profile.sceneSkills || ["Python", "OCR", "AI Agents", "Laravel", "ReactJS", "ElasticSearch", "WebSockets", "Algorithms"];
   const nodeGroup = new THREE.Group();
   nodeGroup.position.copy(core.position);
   mainGroup.add(nodeGroup);
