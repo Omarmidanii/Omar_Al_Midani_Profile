@@ -22,7 +22,7 @@ function renderActions() {
     { label: "Email Omar", href: `mailto:${profile.contact.email}`, variant: "primary" },
     { label: "LinkedIn", href: profile.contact.linkedin },
     { label: "GitHub", href: profile.contact.github },
-    { label: "CV PDF", href: profile.resume }
+    { label: "Merged CV", href: profile.resume }
   ];
 
   heroActions.innerHTML = actions
@@ -32,7 +32,7 @@ function renderActions() {
     .join("");
 
   contactActions.innerHTML = html`
-    <a class="button button-primary" href="mailto:${profile.contact.email}">Start a conversation</a>
+    <a class="button button-primary" href="mailto:${profile.contact.email}">Email Omar</a>
     <button class="button button-ghost" type="button" data-copy-email>Copy email</button>
     <a class="button button-ghost" href="${profile.contact.github}" ${externalLinkAttributes}>View GitHub</a>
     <a class="button button-ghost" href="${profile.contact.codeforces}" ${externalLinkAttributes}>Codeforces</a>
