@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07111f" />
+    <meta
+      name="description"
+      content="Omar Al-Midani - Full Stack Developer specializing in Laravel, ReactJS, scalable back-end systems, real-time applications, and algorithmic problem solving."
+    />
+    <meta property="og:title" content="Omar Al-Midani | Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Professional interactive Three.js profile for a Laravel and ReactJS Full Stack Developer."
+    />
+    <meta property="og:type" content="website" />
+    <title>Omar Al-Midani | Full Stack Developer</title>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <canvas id="scene" aria-hidden="true"></canvas>
+    <div class="noise-layer" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#home" aria-label="Omar Al-Midani home">
+        <span class="brand-mark">OM</span>
+        <span class="brand-copy">
+          <strong>Omar Al-Midani</strong>
+          <small>Full Stack Developer</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Laravel + ReactJS + scalable systems</p>
+            <h1 id="hero-title">
+              Building reliable full-stack products with clean architecture and sharp execution.
+            </h1>
+            <p class="hero-summary">
+              I am Omar Al-Midani, a Full Stack Developer focused on Laravel back ends,
+              ReactJS front ends, real-time features, searchable data systems, and practical
+              product delivery.
+            </p>
+            <div class="hero-actions" id="hero-actions"></div>
+          </div>
+
+          <aside class="hero-panel reveal" aria-label="Profile snapshot">
+            <div class="availability-pill">
+              <span></span>
+              Full-stack product engineering profile
+            </div>
+            <div class="terminal-card">
+              <div class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <pre><code>const developer = {
+  name: "Omar Al-Midani",
+  stack: ["Laravel", "ReactJS", "TypeScript"],
+  strengths: ["APIs", "Real-time", "Search", "Clean Code"],
+  mindset: "Ship scalable, maintainable software"
+};</code></pre>
+            </div>
+            <div class="hero-metrics" id="hero-metrics"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="expertise" class="section-shell" aria-labelledby="expertise-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical profile</p>
+          <h2 id="expertise-title">A balanced full-stack toolkit</h2>
+          <p>
+            Back-end architecture, modern React interfaces, production integrations, and
+            algorithmic discipline combined into one delivery-focused profile.
+          </p>
+        </div>
+        <div class="skills-layout" id="skills-layout"></div>
+      </section>
+
+      <section id="experience" class="section-shell" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Practical work across products, platforms, and teams</h2>
+          <p>
+            A progression from volunteer and freelance delivery into current full-stack product work.
+          </p>
+        </div>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section id="projects" class="section-shell" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="projects-title">Projects with operational depth</h2>
+          <p>
+            Systems covering tourism content, warehouse operations, donor-to-warehouse workflows,
+            product tracking, reporting, and mobile-friendly access.
+          </p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section id="education" class="section-shell" aria-labelledby="education-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education & recognition</p>
+          <h2 id="education-title">Artificial Intelligence foundation with competitive programming strength</h2>
+        </div>
+        <div class="education-grid" id="education-grid"></div>
+      </section>
+
+      <section id="contact" class="section-shell contact-section" aria-labelledby="contact-title">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let’s build scalable software.</h2>
+            <p>
+              For Laravel back-end, React front-end, full-stack delivery, and
+              algorithmic problem-solving work.
+            </p>
+          </div>
+          <div class="contact-actions" id="contact-actions"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Omar Al-Midani. Built with Three.js.</p>
+      <a href="#home">Back to top</a>
+    </footer>
+
+    <noscript>
+      <div class="noscript-message">
+        This profile uses JavaScript for its interactive Three.js experience. Please enable JavaScript to view it fully.
+      </div>
+    </noscript>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
